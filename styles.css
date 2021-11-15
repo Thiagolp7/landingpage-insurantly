@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 1440px;
+  height: 670px;
+  background: url(./assets/imgs/bg-header1.svg);
+}
+
+.top-menu {
+  height: 91px;
+  width: 1043px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 14px;
+}
+
+.nav-menu ul li {
+  text-decoration: none;
+}
+
+.nav-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
