@@ -3,33 +3,140 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --font: 'Montserrat', sans-serif;
+  --white: #ffffff;
+  --blue-light: #8ec2f2;
+  --blue: #23a6f0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--white);
+}
+
 header {
-  width: 1440px;
+  width: 100vw;
   height: 670px;
-  background: url(./assets/imgs/bg-header1.svg);
+  display: flex;
+  justify-content: center;
+
+  background: var(--blue-light) url(./assets/imgs/bg-header1.svg) no-repeat
+    center top;
+
+  font-weight: 700;
+}
+
+.header-sec {
+  width: 1042px;
+  height: 670px;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .top-menu {
+  width: 100%;
   height: 91px;
-  width: 1043px;
+
+  position: relative;
+  top: 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.logo {
+  font-size: 24px;
+}
+
 .nav-menu ul {
+  margin-left: 83px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
+
   list-style: none;
   font-size: 14px;
+  font-weight: 600;
 }
 
 .nav-menu ul li {
   text-decoration: none;
+  font-size: 14px;
 }
 
 .nav-menu ul li a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
+  padding: 15px 5px;
+}
+
+.nav-btns {
+  padding-left: 109px;
+}
+
+.nav-btns a {
+  padding: 15px 25px;
+  color: var(--white);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn-blue {
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+
+.btn-blue img {
+  margin-left: 15px;
+}
+
+.description {
+  width: 100%;
+  margin-top: 125px;
+
+  display: flex;
+  flex-flow: column;
+  gap: 35px;
+}
+
+.description h1 {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+}
+
+.description p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.description-btns {
+  margin-top: 40px;
+}
+
+.description a {
+  color: var(--white);
+  margin-left: 10px;
+  padding: 15px 36px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 14px;
+
+  border: var(--white) 1px solid;
+  border-radius: 37px;
+}
+
+a.btn-blue {
+  margin: 0px;
+  background-color: var(--blue);
+  border: none;
 }
