@@ -4,30 +4,24 @@
   box-sizing: border-box;
 }
 
-:root {
+html {
   --font: 'Montserrat', sans-serif;
   --white: #ffffff;
   --grey: #737373;
   --blue-light: #8ec2f2;
   --blue: #23a6f0;
   --blue-dark: #252b42;
+
+  /* -- px to rem. Divide for 10. 
+  16px = 100%
+  10px = 62.5% 
+  */
+  font-size: 62.5%;
 }
 
 body {
   font-family: var(--font);
   color: var(--white);
-}
-
-header {
-  width: 100vw;
-  height: 670px;
-  display: flex;
-  justify-content: center;
-
-  background: #030303 url(./assets/imgs/bg-header1.svg) no-repeat center;
-  background-size: cover 400px;
-
-  font-weight: 700;
 }
 
 h2 {
@@ -40,15 +34,36 @@ h3 {
   font-weight: 700;
   line-height: 24px;
 }
+
+h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 p {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
 }
 
+/* ### --- HEADER --- ### */
+
+header {
+  width: 100vw;
+  height: 67rem;
+  display: flex;
+  justify-content: center;
+
+  background: #030303 url(./assets/imgs/bg-header1.svg) no-repeat center;
+  background-size: cover 40rem;
+
+  font-weight: 700;
+}
+
 .header-sec {
-  width: 1042px;
-  height: 670px;
+  width: 104.2rem;
+  height: 67rem;
 
   display: flex;
   flex-flow: column;
@@ -57,7 +72,7 @@ p {
 
 .top-menu {
   width: 100%;
-  height: 91px;
+  height: 9.1rem;
 
   position: relative;
   top: 0;
@@ -68,99 +83,100 @@ p {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .nav-menu ul {
-  margin-left: 83px;
+  margin-left: 8.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 1.6rem;
 
   list-style: none;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 .nav-menu ul li {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .nav-menu ul li a {
   color: var(--white);
   text-decoration: none;
-  padding: 15px 5px;
+  padding: 1.5rem .5rem;
 }
 
 .nav-btns {
-  padding-left: 109px;
+  padding-left: 10.9rem;
 }
 
 .nav-btns a {
-  padding: 15px 25px;
+  padding: 1.5rem 2.5rem;
   color: var(--white);
-  font-size: 14px;
+  font-size: 1.4rem;
   text-decoration: none;
 }
 
 .btn-blue {
   background-color: var(--blue);
-  border-radius: 5px;
+  border-radius: .5rem;
 }
 
 .btn-blue img {
-  margin-left: 15px;
+  margin-left: 1.5rem;
 }
 
 .description {
   width: 100%;
-  margin-top: 125px;
+  margin-top: 12.5rem;
 
   display: flex;
   flex-flow: column;
-  gap: 35px;
+  gap: 3.5rem;
 }
 
 .description h1 {
   font-weight: 800;
-  font-size: 58px;
-  line-height: 80px;
+  font-size: 5.8rem;
+  line-height: 8.0rem;
 }
 
 .description p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 .description-btns {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .description a {
   color: var(--white);
-  margin-left: 10px;
-  padding: 15px 36px;
+  margin-left: 1rem;
+  padding: 1.5rem 3.6rem;
 
   text-decoration: none;
 
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1.4rem;
 
-  border: var(--white) 1px solid;
-  border-radius: 37px;
+  border: var(--white) .1rem solid;
+  border-radius: 3.7rem;
 }
 
 a.btn-blue {
-  margin: 0px;
+  margin: 0;
   background-color: var(--blue);
   border: none;
 }
 
+/* ###### --- MAIN --- ###### */
 .products {
   width: 100vw;
-  height: 435px;
+  height: 43.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,8 +184,8 @@ a.btn-blue {
   background-color: var(--blue-dark);
 }
 .products div {
-  width: 328px;
-  height: 243px;
+  width: 32.8rem;
+  height: 24.3rem;
 
   display: flex;
   flex-flow: column;
@@ -178,20 +194,20 @@ a.btn-blue {
 }
 
 .products div img {
-  width: 59px;
+  width: 5.9rem;
 }
 .products h3 {
-  margin-top: 30px;
+  margin-top: 3.0rem;
 }
 
 .products p {
-  margin-top: 10px;
+  margin-top: 1rem;
   text-align: center;
 }
 
 .industry {
   width: 100vw;
-  height: 772px;
+  height: 77.2rem;
 
   background-color: var(--blue-light);
 
@@ -202,26 +218,26 @@ a.btn-blue {
 }
 
 .industry p {
-  margin-top: 10px;
+  margin-top: 1rem;
   text-align: center;
 }
 
 .cards {
-  width: 1042px;
-  margin-top: 120px;
+  width: 104.2rem;
+  margin-top: 12rem;
   display: flex;
   justify-content: center;
-  gap: 137px;
+  gap: 13.7rem;
 }
 
 .cards div {
   width: 450px;
   height: 288px;
 
-  color: var(--blue-dark2);
+  color: var(--blue-dark);
   background-color: var(--white);
 
-  padding: 30px 40px;
+  padding: 3rem 4rem;
 
   display: flex;
   flex-flow: column;
@@ -229,35 +245,32 @@ a.btn-blue {
 }
 
 .avatar {
-  width: 72px;
+  width: 7.2rem;
   position: absolute;
-  top: 28px;
-  left: -47px;
+  top: 2.8rem;
+  left: -4.7rem;
   z-index: 10;
 }
 
 .cards h6 {
   color: var(--grey);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .cards .score {
   width: 100%;
-  height: 20px;
+  height: 2rem;
   display: block;
-  margin-top: 15px;
+  margin-top: 1.5rem;
   padding: 0;
 }
 
 .cards .score img {
   display: inline-block;
-  width: 18.35px;
+  width: 1.835rem;
 }
 
 .cards p {
-  margin-top: 15px;
+  margin-top: 1.5rem;
   text-align: left;
   color: var(--grey);
 }
