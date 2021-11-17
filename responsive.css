@@ -1,0 +1,65 @@
+@media screen and (max-width: 1160px) {
+  .review {
+    height: auto;
+    padding: 7.5rem;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .contact-us .container,
+  .info .container,
+  .social .container {
+    padding: 5rem;
+  }
+
+  .prices-container {
+    gap: 2rem;
+  }
+
+  .prices-container > .container {
+    width: 31rem;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .products,
+  .pricing {
+    height: auto;
+    padding: 8rem;
+    flex-direction: column;
+  }
+
+  .prices-container {
+    flex-direction: column;
+    height: 100%;
+    gap: 8.3rem;
+  }
+
+  .contact-us {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contact-us > .container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .info {
+    height: auto;
+    padding: 8rem 0;
+  }
+
+  .social .container {
+    padding: 0 auto;
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 835px){
+  
+}
+

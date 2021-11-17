@@ -67,7 +67,6 @@ p {
 
 .btn-link {
   color: var(--white);
-  /* margin-left: 1rem; */
   padding: 1.5rem 3.6rem;
 
   text-decoration: none;
@@ -84,6 +83,11 @@ p {
   border: none;
 }
 
+.square {
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+}
+
 /* ###### === HEADER === ###### */
 
 header {
@@ -98,14 +102,13 @@ header {
   font-weight: 700;
 }
 
-.header-sec {
+.fix-container {
+  min-width: 104.2rem;
   width: 104.2rem;
-  height: 67rem;
-
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  height: 100%;
 }
+
+/* === TOP MENU === */
 
 .top-menu {
   width: 100%;
@@ -157,15 +160,11 @@ header {
   text-decoration: none;
 }
 
-.btn-blue {
-  background-color: var(--blue);
-  border-radius: 0.5rem;
-}
-
-.btn-blue img {
+.nav-btns .btn-link img {
   margin-left: 1.5rem;
 }
 
+/* === DESCRIPTION === */
 .description {
   width: 100%;
   margin-top: 12.5rem;
@@ -237,8 +236,9 @@ header {
   text-align: center;
 }
 
-/* === Industry Section ===*/
-.industry {
+
+/* === review Section ===*/
+.review {
   width: 100vw;
   height: 77.2rem;
 
@@ -251,14 +251,16 @@ header {
 }
 
 .cards {
-  width: 104.2rem;
+  width: 80vw;
+  min-width: 1000px;
+  max-width: 104.2rem;
   margin-top: 12rem;
   display: flex;
-  justify-content: center;
-  gap: 13.7rem;
+  justify-content: space-between;
+  /* gap: 13.7rem; */
 }
 
-.cards div {
+.cards > .container {
   width: 45rem;
   height: 28.8rem;
 
@@ -272,7 +274,7 @@ header {
   position: relative;
 }
 
-.avatar {
+.cards > .container > .avatar {
   width: 7.2rem;
   position: absolute;
   top: 2.8rem;
@@ -359,11 +361,11 @@ header {
   bottom: 1.75rem;
 }
 
-.projects-container .container .elements h4 {
+.projects-container > .container .elements > h4 {
   margin-top: 1.5rem;
 }
 
-.projects-container .container .elements a {
+.projects-container > .container .elements > a {
   margin-top: 1.5rem;
   display: inline-block;
 }
@@ -388,8 +390,9 @@ header {
   gap: 3rem;
 }
 
-.prices-container .container {
+.prices-container > .container {
   width: 32.7rem;
+  min-width: 30rem;
   height: 68.9rem;
 
   background: var(--white);
@@ -404,34 +407,34 @@ header {
   position: relative;
 }
 
-.prices-container .container h3 {
+.prices-container > .container h3 {
   color: var(--blue-dark);
   font-size: 2.4rem;
   line-height: 3.2rem;
 }
-.prices-container .container h5 {
+.prices-container > .container h5 {
   color: var(--grey);
   text-align: center;
 }
-.prices-container .container h2 {
+.prices-container > .container h2 {
   color: var(--blue);
 }
-.prices-container .container div h5 {
+.prices-container > .container div h5 {
   color: var(--blue-light);
 }
 
-.prices-container .container a {
+.prices-container > .container a {
   width: 24.6rem;
   height: 5.2rem;
   text-align: center;
   display: block;
 }
 
-.prices-container .container ul {
+.prices-container > .container ul {
   color: var(--blue-dark);
 }
 
-.prices-container .container ul li {
+.prices-container > .container ul li {
   color: var(--blue-dark);
   list-style: none;
   display: flex;
@@ -454,7 +457,7 @@ header {
   background: var(--grey-light);
 }
 
-.prices-container .container h6 {
+.prices-container > .container h6 {
   color: var(--blue-dark);
 }
 
@@ -477,14 +480,7 @@ header {
   color: var(--white) !important;
 }
 
-.square {
-  padding: 1.5rem 2.5rem;
-  border-radius: 0.5rem;
-}
-
 /* ###### === FOOTER === ###### */
-
-/* ** grid width: 104.2rem; */
 
 /* === Contact Us Section ===  */
 .contact-us {
@@ -497,8 +493,9 @@ header {
   align-items: center;
 }
 
-.contact-us .container {
+.contact-us > .container {
   width: 104.2rem;
+  min-width: 80rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -536,15 +533,15 @@ header {
 
 .info .container {
   width: 104.2rem;
+  min-width: 80rem;
   display: flex;
   justify-content: space-between;
 }
 
-.info ul {
-}
 .info ul li {
   list-style: none;
 }
+
 .info a {
   color: var(--white);
   text-decoration: none;
@@ -567,16 +564,20 @@ header {
 
 .social .container {
   width: 104.2rem;
+  min-width: 80rem;
   height: 100%;
+
+  margin: auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 6.2rem;
 }
 
 .social .social-links {
   display: flex;
   gap: 2rem;
+  margin-right: 3.8rem;
 }
 .social-links img {
   width: 2.4rem;

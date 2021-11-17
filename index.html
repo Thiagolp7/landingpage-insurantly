@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insurance</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,8 @@
   </head>
   <body>
     <header>
-      <section class="header-sec">
+      <div class="fix-container">
+        <!-- ###### ====== TOP MENU ====== ###### -->
         <section class="top-menu">
           <span class="logo">BrandName</span>
           <nav class="nav-menu">
@@ -28,27 +30,31 @@
           </nav>
           <nav class="nav-btns">
             <a href="#">Login</a>
-            <a href="#" class="btn-blue"
+            <a href="#" class="btn-link bg-blue square"
               >Become a member
               <img src="./assets/icons/arrow-right.svg" alt="seta para direita"
             /></a>
           </nav>
         </section>
+
+        <!-- ###### ====== DESCRIPTION ====== ###### -->
         <section class="description">
-          <h1>
-            We Ensure A Best<br />
-            Insurance Service
-          </h1>
-          <p>
-            We know how large objects will act,<br />
-            but things on a small scale.
-          </p>
-          <div class="description-btns">
-            <a href="#" class="btn-link bg-blue">Get Quote Now</a>
-            <a href="#" class="btn-link">Learn More</a>
+          <div class="fix-container">
+            <h1>
+              We Ensure A Best<br />
+              Insurance Service
+            </h1>
+            <p>
+              We know how large objects will act,<br />
+              but things on a small scale.
+            </p>
+            <div class="description-btns">
+              <a href="#" class="btn-link bg-blue">Get Quote Now</a>
+              <a href="#" class="btn-link">Learn More</a>
+            </div>
           </div>
         </section>
-      </section>
+      </div>
     </header>
     <main>
       <section class="products" id="products">
@@ -60,7 +66,7 @@
             Now we have given up.
           </p>
         </div>
-        <div>
+        <div class="container">
           <img src="./assets/icons/fav.svg" alt="fav icon" />
           <h3>Set for life</h3>
           <p>
@@ -68,7 +74,7 @@
             machines that launched
           </p>
         </div>
-        <div>
+        <div class="container">
           <img src="./assets/icons/users.svg" alt="book icon" />
           <h3>100% Satisfaction</h3>
           <p>
@@ -78,16 +84,16 @@
         </div>
       </section>
 
-      <section class="industry">
+      <section class="review">
         <div class="section-title">
-          <h2>Industry</h2>
+          <h2>What Clients Say</h2>
           <p>
             Problems trying to resolve the conflict between <br />
             the two major realms of Classical physics: Newtonian mechanics
           </p>
         </div>
         <div class="cards" id="cards">
-          <div>
+          <div class="container">
             <img class="avatar" src="./assets/imgs/user.1.svg" alt="avatar" />
             <h3>Regina Miles</h3>
             <h6>Designer</h6>
@@ -106,7 +112,7 @@
               first and then space.
             </p>
           </div>
-          <div>
+          <div class="container">
             <img class="avatar" src="./assets/imgs/user.2.svg" alt="avatar" />
             <h3>Rogerinho do Ingá</h3>
             <h6>Designer</h6>
