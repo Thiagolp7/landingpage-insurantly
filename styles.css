@@ -481,3 +481,107 @@ header {
   padding: 1.5rem 2.5rem;
   border-radius: 0.5rem;
 }
+
+/* ###### === FOOTER === ###### */
+
+/* ** grid width: 104.2rem; */
+
+/* === Contact Us Section ===  */
+.contact-us {
+  width: 100vw;
+  height: 14.2rem;
+  background-color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us .container {
+  width: 104.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-us h3 {
+  color: var(--blue-dark);
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.contact-us p {
+  color: var(--grey);
+  margin-top: 1rem;
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.contact-us a {
+  margin-right: 3.8rem;
+  padding: 1.5rem 4rem;
+}
+
+/* === Info Section ===  */
+.info {
+  width: 100vw;
+  height: 27.2rem;
+  background-color: var(--blue-dark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .container {
+  width: 104.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info ul {
+}
+.info ul li {
+  list-style: none;
+}
+.info a {
+  color: var(--white);
+  text-decoration: none;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  margin-bottom: 1rem;
+}
+
+/* === Social Media Section === */
+.social {
+  width: 100vw;
+  height: 7.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social .container {
+  width: 104.2rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 6.2rem;
+}
+
+.social .social-links {
+  display: flex;
+  gap: 2rem;
+}
+.social-links img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.social h6 {
+  color: var(--grey);
+}
