@@ -1,4 +1,9 @@
 @media screen and (max-width: 1160px) {
+
+  .fix-container{
+    padding: 0 3.8rem;
+  }
+
   .review {
     height: auto;
     padding: 7.5rem;
@@ -22,9 +27,21 @@
   .prices-container > .container {
     width: 31rem;
   }
+
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 1000px) {
+  header{
+    background: var(--blue-light);
+  }
+
+  .description {
+    display: none;
+  }
+  .mobile-description{
+    display: flex;
+  }
+  
   .products,
   .pricing {
     height: auto;
@@ -57,9 +74,38 @@
     padding: 0 auto;
     min-width: 0;
   }
+
+  
+  .fix-container{
+    padding: 0;
+  }
+
+  .top-menu{
+    display: none;
+  }
+  
+  .mob-menu {
+    display: flex;
+  }
+  
+  #expading-mobile-menu.active{
+    display: flex;
+  }
+
 }
 
-@media screen and (max-width: 835px){
+@media screen and (max-width: 660px){
+  
+  .description{
+    margin-left: auto ;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+
+
   
 }
 

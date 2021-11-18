@@ -36,10 +36,37 @@
             /></a>
           </nav>
         </section>
+        <!-- ###### ====== MOBILE MENU ====== ###### -->
+        <section class="mob-menu" id="mob-menu">
+          <div class="menu-bar">
+            <h3>BrandName</h3>
+            <div>
+              <a href="">
+                <img src="./assets/icons/search.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./assets/icons/shopping-mobile.svg" alt="" />
+              </a>
+              <button class="btn-menu" id="btn-menu-mobile">
+                <img src="./assets/icons/menu-mobile.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="expanding-menu" id="expading-mobile-menu">
+            <nav>
+              <ul>
+                <li><a href="/" class="mob-link">Home</a></li>
+                <li><a href="/" class="mob-link">Product</a></li>
+                <li><a href="/" class="mob-link">Pricing</a></li>
+                <li><a href="/" class="mob-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
 
         <!-- ###### ====== DESCRIPTION ====== ###### -->
         <section class="description">
-          <div class="fix-container">
+          <div>
             <h1>
               We Ensure A Best<br />
               Insurance Service
@@ -57,6 +84,20 @@
       </div>
     </header>
     <main>
+      <section class="mobile-description" id="mobile-description">
+          <h2>
+            We Ensure A Best<br />
+            Insurance Service
+          </h2>
+          <h4>
+            We know how large objects will act,<br />
+            but things on a small scale.
+          </h4>
+          <div class="description-btns">
+            <a href="#" class="btn-link bg-blue">Get Quote Now</a>
+            <a href="#" class="btn-link">Learn More</a>
+          </div>
+      </section>
       <section class="products" id="products">
         <div class="container">
           <img src="./assets/icons/book.svg" alt="book icon" />
@@ -387,5 +428,6 @@
         </div>
       </section>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
