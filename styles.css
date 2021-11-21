@@ -227,11 +227,11 @@ header {
   border: none;
   cursor: pointer;
 }
-.mob-menu > .menu-bar button:hover,
+/* .mob-menu > .menu-bar button:hover,
 .mob-menu > .menu-bar img:hover {
   position: relative;
   top: -0.5rem;
-}
+} */
 
 .mob-menu > .expanding-menu {
   width: 100%;
@@ -251,11 +251,11 @@ header {
   line-height: 4.5rem;
 }
 
-.mob-menu > .expanding-menu a:hover {
+/* .mob-menu > .expanding-menu a:hover {
   color: var(--blue-light);
   position: relative;
   top: -0.5rem;
-}
+} */
 
 .mob-menu > .expanding-menu ul {
   list-style: none;
@@ -489,7 +489,7 @@ h4 {
 .projects-container .container .elements {
   width: 33.1rem;
   padding-left: 2rem;
-  padding-bottom: 1.75rem;
+  /* padding-bottom: 1.75rem; */
   position: relative;
   top: 27.85rem;
   /* left: 2rem; */

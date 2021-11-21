@@ -50,9 +50,9 @@
     flex-direction: column;
   }
 
-  .projects-container{
+  /* .projects-container{
     scrollbar-width: none;
-  }
+  } */
   .prices-container {
     flex-direction: column;
     height: 100%;
@@ -161,7 +161,7 @@
 
   .projects .projects-container {
     flex-direction: column;
-    height: auto;
+    height: 100%;
     margin: auto;
     padding: 0;
   }
