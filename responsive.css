@@ -1,6 +1,5 @@
 @media screen and (max-width: 1160px) {
-
-  .fix-container{
+  .fix-container {
     padding: 0 3.8rem;
   }
 
@@ -27,21 +26,23 @@
   .prices-container > .container {
     width: 31rem;
   }
-
 }
 
 @media screen and (max-width: 1000px) {
-  header{
+  header {
     background: var(--blue-light);
   }
 
   .description {
     display: none;
   }
-  .mobile-description{
+  .mobile-description {
     display: flex;
   }
-  
+  .mobile-description .description-btns a {
+    margin: 0;
+  }
+
   .products,
   .pricing {
     height: auto;
@@ -49,6 +50,9 @@
     flex-direction: column;
   }
 
+  .projects-container{
+    scrollbar-width: none;
+  }
   .prices-container {
     flex-direction: column;
     height: 100%;
@@ -58,6 +62,10 @@
   .contact-us {
     height: auto;
     flex-direction: column;
+  }
+
+  .contact-us a {
+    margin: 0;
   }
 
   .contact-us > .container {
@@ -75,37 +83,118 @@
     min-width: 0;
   }
 
-  
-  .fix-container{
+  .fix-container {
     padding: 0;
   }
 
-  .top-menu{
+  .top-menu {
     display: none;
   }
-  
+
   .mob-menu {
     display: flex;
   }
-  
-  #expading-mobile-menu.active{
+
+  #expading-mobile-menu.active {
     display: flex;
   }
 
+  .pricing {
+    margin: auto;
+  }
 }
 
-@media screen and (max-width: 660px){
-  
-  .description{
-    margin-left: auto ;
+@media screen and (max-width: 840px) {
+  .description {
+    margin-left: auto;
     justify-content: center;
     align-items: center;
-
   }
 
-
-
-
-  
+  .contact-us .container {
+    width: 80%;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  .logo-mobile {
+    font-size: 2.2rem !important;
+  }
+
+  .review {
+    padding: 7.5rem 3.5rem;
+  }
+
+  .cards {
+    min-width: initial;
+    gap: 6rem;
+  }
+
+  .cards > .container {
+    width: auto;
+    height: auto;
+    min-width: 3.2rem;
+    padding-top: 4rem;
+  }
+
+  .cards > .container > .avatar {
+    left: initial;
+    right: calc(50% - (7.2rem / 2));
+    /* right: 4rem; */
+    top: -3.8rem;
+  }
+
+  .pricing .section-title {
+    padding: auto;
+    width: auto;
+  }
+
+  .projects {
+    height: auto;
+    padding-top: 7.5rem;
+    gap: 7rem;
+  }
+
+  .projects .section-title {
+    padding: 0rem 3.5rem;
+  }
+
+  .projects .projects-container {
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+    padding: 0;
+  }
+
+  .info {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  .info .container {
+    width: 80%;
+    min-width: initial;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .social {
+    height: auto;
+    background-color: var(--blue-dark);
+  }
+
+  .social .container {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: initial;
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+
+  .social h6 {
+    color: var(--withe);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
